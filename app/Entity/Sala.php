@@ -45,10 +45,10 @@ class Sala{
    * @param objeto $obParede
    */
   public function __construct($obParede = null){
-    $this->altura_parede = $obParede->altura_parede;
+    $this->altura_parede  = $obParede->altura_parede;
     $this->largura_parede = $obParede->largura_parede;
-    $this->possui_janela = $obParede->possui_janela;
-    $this->possui_porta = $obParede->possui_porta;
+    $this->possui_janela  = $obParede->possui_janela;
+    $this->possui_porta   = $obParede->possui_porta;
   }
 
   /**
@@ -118,19 +118,19 @@ class Sala{
 
     while ($quantidadeTinta >= 18){
         $latas['18']++;
-        $quantidadeTinta -= 18;
+        $quantidadeTinta    -= 18;
     }
     while ($quantidadeTinta >= 3.6){
         $latas['3,6']++;
-        $quantidadeTinta -= 3.6;
+        $quantidadeTinta    -= 3.6;
     }
     while ($quantidadeTinta >= 2.5){
         $latas['2,5']++;
-        $quantidadeTinta -= 2.5;
+        $quantidadeTinta    -= 2.5;
     }
     while ($quantidadeTinta > 0){
         $latas['0,5']++;
-        $quantidadeTinta -= 0.5;
+        $quantidadeTinta    -= 0.5;
     }
 
     return $latas;
